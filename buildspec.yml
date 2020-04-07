@@ -1,0 +1,27 @@
+version: 0.2
+
+phases:
+
+   install:
+     commands:
+       - echo Executing Install Phase
+   
+   
+   pre-build:
+     commands:
+       - echo Executing Pre Build Phase
+       - test -e index.html
+   
+   
+   build:
+     commands:
+       - echo Inside Build Phase
+       - grep -Fq "Infosys" index.html
+   
+   
+   post-build:
+     commands:
+       - echo Inside Post Build Phase
+   
+   
+   
