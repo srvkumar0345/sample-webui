@@ -7,7 +7,7 @@ phases:
        - echo Executing Install Phase
    
    
-   pre-build:
+   pre_build:
      commands:
        - echo Executing Pre Build Phase
        - test -e index.html
@@ -19,7 +19,7 @@ phases:
        - grep -Fq "Infosys" index.html
    
    
-   post-build:
+   post_build:
      commands:
        - echo Inside Post Build Phase
    
