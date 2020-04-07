@@ -25,7 +25,11 @@ phases:
        
 artifacts:
     files:
-      - '**/*'
+      - '/css/*'
+      - '/fonts/*'
+      - '/img/*'
+      - '/js/*'
+      - 'index.html'
    
    
    
